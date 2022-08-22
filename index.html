@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='UTF-8' />
+    <meta http-equiv='X-UA-Compatible' content='IE=edge' />
+    <meta name='viewport' content='width=device-width, initial-scale=1.0' />
+    <title>NBA Survey</title>
+    <link rel='stylesheet' href='styles.css' />
+  </head>
+  <body>
+    <h1 id='title'>NBA Survey Form</h1>
+    <p id='description'>Please take a moment to fill out this form, thank you!</p>
+
+    <form id='survey-form'>
+      <label for='name' id='name-label'>
+        Name
+        <input type='text' id='name' placeholder='Enter your name' required />
+      </label>
+      
+      <label for='email' id='email-label'>
+        Email
+        <input type='email' id='email' placeholder='Enter your email' required />
+      </label>
+
+      <label for='number' id='number-label'>
+        Age
+        <input type='number' id='number' placeholder='How old are you?' min='0' max='120' />
+      </label>
+
+      <label for='dropdown' id='dropdown-label'>
+        Which NBA Survey would you like to take?
+        <select id='dropdown'>
+          <option>Best Current Player</option>
+          <option>Greatest of All Time</option>
+        </select>
+      </label>
+
+      <label for='player' id='player-label'> 
+        Who is the best current player?
+    </label>
+
+    <input type='radio' name='player' value='1' /> Lebron James <br />
+    <input type='radio' name='player' value='2' /> Giannis Antetokounmpo <br />
+    <input type='radio' name='player' value='3' /> Joel Embiid <br />
+    <input type='radio' name='player' value='4' /> Nikola Jokic <br />
+    <input type='radio' name='player' value='5' /> Stephen Curry <br />
+    <input type='radio' name='player' value='6' /> Kevin Durant <br />
+    <input type='radio' name='player' value='7' /> Luka Doncic <br />
+    <input type='radio' name='player' value='8' /> Jayson Tatum <br />
+
+    <br /><br />
+    <label for='greats' id='greats-label'>
+    Who is the greatest of all time?
+    </label><br />
+
+    <input type='checkbox' name='greats' value='1' /> Michael Jordan <br />  
+    <input type='checkbox' name='greats' value='2' /> Kobe Bryant <br />
+    <input type='checkbox' name='greats' value='3' /> Lebron James <br />
+    <input type='checkbox' name='greats' value='4' /> Magic Johnson <br />
+    <input type='checkbox' name='greats' value='5' /> Kareem Abdul-Jabbar <br />
+     
+     <br /><br />
+
+     <label for='comments' id='comments-label'>
+       Any input on this debate?
+       <textarea id='comments' cols='30' rows='10'></textarea>
+      </label>
+
+    <button id='submit' type='submit'>Submit</button>
+    </form>
+
+    
+  <body>
+</html>
